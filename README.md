@@ -1,8 +1,7 @@
-#Home assistant ESPHome Addon config
-#Thanks to Chino-Lu for his work on implementing the sim7600 module for ESPHome. None of the code here is from me, this repo is just for documentation and example.
-https://github.com/chino-lu/sim7600.git
+# Home assistant ESPHome Addon config
+## Thanks to Chino-Lu for his work on implementing the sim7600 module for ESPHome. None of the code here is from me, this repo is just for documentation and example. https://github.com/chino-lu/sim7600.git
 
-Yaml code for module:
+### Yaml code for module:
 
 esphome:
   name: esphome-web-014ffc
@@ -152,7 +151,7 @@ sim7600:
         id(ussd_message).publish_state(ussd);
        
 
-In Home Assistant:
+### In Home Assistant:
 Copy the git repo files from https://github.com/smillier/sim7600.git in esphome/components/sim7600 
 ![VSCode compenents](https://github.com/smillier/sim7600/blob/main/HomeAssistant_FilesLocation.png)
 SIM Card on the sim7600 module must be PIN free. If there is a PIN code on your SIM card, the ESPHome logs will show Error code 3 when running the AT+CMFG=1 command. The sim7600 will also show a steady green led. When there is no PIN code on SIM, the green led will blink.
