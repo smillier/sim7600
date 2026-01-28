@@ -57,7 +57,7 @@ api:
 
 ota:
   - platform: esphome
-    password: "pwd4espOta"
+    password: "pwdXXXota"
 
 
 
@@ -68,7 +68,7 @@ wifi:
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "Esphome-Web-014Ffc"
-    password: "pdwHotSpot"
+    password: "pwdXXXHotspot"
 
 
 captive_portal:
