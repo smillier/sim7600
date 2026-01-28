@@ -2,7 +2,7 @@
 ## Thanks to Chino-Lu for his work on implementing the sim7600 module for ESPHome. None of the code here is from me, this repo is just for documentation and example. https://github.com/chino-lu/sim7600.git
 
 ### Yaml code for module:
-
+```
 esphome:
   name: esphome-web-014ffc
   friendly_name: ES32Relay
@@ -149,7 +149,7 @@ sim7600:
   on_ussd_received:
     - lambda: |-
         id(ussd_message).publish_state(ussd);
-       
+ ```      
 
 ### In Home Assistant:
 Copy the git repo files from https://github.com/smillier/sim7600.git in esphome/components/sim7600 
