@@ -154,5 +154,6 @@ sim7600:
 ### In Home Assistant:
 Copy the git repo files from https://github.com/smillier/sim7600.git in esphome/components/sim7600 
 ![VSCode compenents](https://github.com/smillier/sim7600/blob/main/HomeAssistant_FilesLocation.png)
+
 SIM Card on the sim7600 module must be PIN free. If there is a PIN code on your SIM card, the ESPHome logs will show Error code 3 when running the AT+CMFG=1 command. The sim7600 will also show a steady green led. When there is no PIN code on SIM, the green led will blink.
 
